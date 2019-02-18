@@ -11,3 +11,7 @@ For usage instructions, see the [AWS documentation site](https://docs.aws.amazon
 docker build -t amazon-corretto-8 github.com/corretto/corretto-8-docker
 ```
 
+## Testing
+
+Tests are defined in `test-image.yaml` using [GoogleContainerTools/container-structure-test](
+https://github.com/GoogleContainerTools/container-structure-test). To run tests, execute `./test-image.sh`. 

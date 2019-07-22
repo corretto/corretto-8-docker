@@ -1,8 +1,8 @@
 FROM debian:stretch-slim
 
-ARG tarball=amazon-corretto-8.212.04.2-linux-x64.tar.gz
-ARG path=https://d3pxv6yz143wms.cloudfront.net/8.212.04.2
-ARG key=0E50DA5A06C9F82E013C6561A5E4F647D043E83B
+ARG tarball=amazon-corretto-8.222.10.1-linux-x64.tar.gz
+ARG path=https://d3pxv6yz143wms.cloudfront.net/8.222.10.1
+ARG key=C554E802F4545B60919A0A87BD93DF06B540D62A
 
 RUN set -eux; \
 	apt-get update; \

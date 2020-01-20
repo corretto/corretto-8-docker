@@ -1,14 +1,14 @@
 FROM debian:buster-slim
 
 # x86_64 args
-ARG deb_x64=java-1.8.0-amazon-corretto-jdk_8.232.09-1_amd64.deb
-ARG path_x64=https://d3pxv6yz143wms.cloudfront.net/8.232.09.1
-ARG key_x64=E8EB406377AD2B9E9A4765D19CB3BC6FF6C9FC19
+ARG deb_x64=java-1.8.0-amazon-corretto-jdk_8.242.08-1_amd64.deb
+ARG path_x64=https://corretto.aws/downloads/resources/8.242.08.1
+ARG key_x64=6DC3636DAE534049C8B94623A122542AB04F24E3
 
 # aarch64 args
-ARG deb_aarch64=java-1.8.0-amazon-corretto-jdk_8.232.09-1_arm64.deb
-ARG path_aarch64=https://d3pxv6yz143wms.cloudfront.net/8.232.09.1
-ARG key_aarch64=E8EB406377AD2B9E9A4765D19CB3BC6FF6C9FC19
+ARG deb_aarch64=java-1.8.0-amazon-corretto-jdk_8.242.08-1_arm64.deb
+ARG path_aarch64=https://corretto.aws/downloads/resources/8.242.08.1
+ARG key_aarch64=6DC3636DAE534049C8B94623A122542AB04F24E3
 
 # In addition to installing the DEB, we also install
 # fontconfig. The folks who manage the docker hub's

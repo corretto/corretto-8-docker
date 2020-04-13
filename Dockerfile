@@ -23,7 +23,9 @@ RUN set -eux \
     && curl -fL -o /etc/yum.repos.d/corretto.repo https://yum.corretto.aws/corretto.repo \
     && grep -q '^gpgcheck=1' /etc/yum.repos.d/corretto.repo \
     && yum install -y java-1.8.0-amazon-corretto-devel-$version \
+    && (find /usr/lib/jvm/java-1.8.0-amazon-corretto -name src.zip -delete || true) \
     && yum install -y fontconfig \
     && yum clean all
+
 
 ENV JAVA_HOME=/usr/lib/jvm/java-1.8.0-amazon-corretto
